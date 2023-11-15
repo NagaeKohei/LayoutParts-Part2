@@ -1,1 +1,37 @@
 @charset "UTF-8";
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.balloon1 {
+  display: inline-block;
+  position: relative;
+  min-width: 120px;
+  background: #fad296;
+  border: solid 5px #8f5a0a;
+  border-radius: 30px;
+}
+
+.balloon1:before,.balloon1::after {
+  content: "";
+  position: absolute;
+  top: 102%;
+  left: 8%;
+  margin-left: -14.7px;
+  border: 22px solid transparent;
+  border-top: 22px solid #8f5a0a;
+}
+.balloon1::after {
+  top: 98%;
+  border-top: 22px solid #fad296;
+}
+
+.balloon1 p {
+  width: 500px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+}
